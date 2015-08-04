@@ -3,6 +3,10 @@ require('scrabble')
 
 describe('String#scrabble') do
   it("returns a scrabble score for a letter") do
-    expect("a e i o u l n r s t".scrabble()).to(eq(1))
+    expect("a".scrabble()).to(eq(1))
+  end
+
+it("returns a scrabble score for a letter") do
+    expect("d".scrabble()).to(eq(2))
   end
 end
